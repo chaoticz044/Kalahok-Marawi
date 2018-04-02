@@ -139,7 +139,8 @@
 
     function renderQuestion(questionIndex, nextQuestion) {
       if (questionIndex >= ALL_QUESTIONS.length) {
-        redirect(APP_URL_ROOT + '/' + getCurrentLanguage() + '/rate-comments/');
+        //redirect(APP_URL_ROOT + '/' + getCurrentLanguage() + '/rate-comments/');
+	redirect(APP_URL_ROOT + '/' + getCurrentLanguage() + '/qualitative-questions/');
       }
 
       $('#previous').prop('disabled', questionIndex === 0);
